@@ -102,7 +102,7 @@ function VerifyColission(){
 // A function that will update the position of the ball is also needed. Lets create one
 function update() {
 	var state=VerifyColission();
-	console.log(state);
+	//console.log(state);
 
 		clearCanvas();
 		ball.draw();
@@ -145,7 +145,7 @@ setInterval(update, 1000/60);
 // Also, try playing with the x-component of velocity ;)
 
 $('#canvas').click(function(){
-	console.log("click ");
+	//console.log("click ");
 	ball.vy = 10 * -bounceFactor;
 	ball.y=ball.y-5;
 });
